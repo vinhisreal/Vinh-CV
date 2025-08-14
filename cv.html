@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Quang Vinh - AI Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 1in;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20pt;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10pt;
+        }
+        
+        .name {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 8pt;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+        
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .section {
+            margin-bottom: 18pt;
+        }
+        
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8pt;
+            border-bottom: 0.5pt solid #000;
+            padding-bottom: 2pt;
+        }
+        
+        .institution {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .degree {
+            font-style: italic;
+            margin-bottom: 2pt;
+        }
+        
+        .date {
+            float: right;
+            font-weight: normal;
+            font-size: 10pt;
+        }
+        
+        .experience-item,
+        .education-item,
+        .project-item {
+            margin-bottom: 12pt;
+            clear: both;
+        }
+        
+        .position {
+            font-weight: bold;
+            margin-bottom: 2pt;
+        }
+        
+        .supervisor {
+            font-style: italic;
+            font-size: 10pt;
+            margin-bottom: 4pt;
+        }
+        
+        .description {
+            margin-left: 0;
+            margin-bottom: 4pt;
+        }
+        
+        .description li {
+            margin-bottom: 3pt;
+            list-style-type: disc;
+            margin-left: 20pt;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 2pt;
+        }
+        
+        .project-link {
+            font-size: 10pt;
+            color: #0066cc;
+            text-decoration: none;
+            margin-left: 10pt;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10pt;
+            align-items: start;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        .skill-list {
+            text-align: justify;
+        }
+        
+        .achievement-highlight {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0.5in;
+                font-size: 10pt;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 15pt;
+            }
+            
+            .experience-item,
+            .project-item {
+                page-break-inside: avoid;
+            }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                font-size: 10pt;
+            }
+            
+            .date {
+                float: none;
+                display: block;
+                font-weight: bold;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 5pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">NGUYEN QUANG VINH</div>
+        <div class="contact-info">
+            Vietnam · vinhquang2610345@gmail.com<br>
+            <a href="https://github.com/vinhisreal">Github</a> · 
+            <a href="https://linkedin.com/in/vinhisreal">LinkedIn</a>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-title">Summary</div>
+        AI student with a foundation in Machine Learning, Deep Learning, Computer Vision, and NLP. Eager to gain practical experience, learn from professional environments, and achieve sustainable personal growth.
+    </div>
+
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        
+        <div class="education-item">
+            <div class="institution">
+                Ton Duc Thang University
+                <span class="date">September 2022 – Present</span>
+            </div>
+            <div class="degree">B.Sc. in Computer Science (GPA: 8.4/10)
+                <span class="date">Expected Graduation: 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+                <div class="project-item">
+            <div class="project-title">
+                <a href="#" target="_blank">
+                    Multimodal RAG System
+                </a>
+                <span class="date">Jul 2025 – Present (In Progress)</span>
+                </div>
+                <ul class="description">
+                    <li>Designed a prototype Retrieval-Augmented Generation system capable of processing and retrieving information from text, images, and tables.</li>
+                    <li>Integrated multilingual OCR (English, Vietnamese), CLIP-based image embeddings, and sentence-transformer text embeddings for multimodal search.</li>
+                    <li>Implemented hybrid retrieval with cross-encoder reranking, contextual embeddings, and local vector store persistence.</li>
+                    <li>Connected to Ollama LLM (LLaMA 3.1) for response generation, supporting up to 8k context length.</li>
+                    <li>Enabled optional modules for table extraction, image captioning, and web scraping.</li>
+                    <li><strong>Technologies:</strong> PyTorch, SentenceTransformers, CLIP, LangChain, Chroma, Ollama, OCR, Python.</li>
+                </ul>
+            </div>
+        <div class="project-item">
+            <div class="project-title">
+                <a href="https://github.com/vinhisreal/ocr-vietnam-invoice" target="_blank">
+                    Vietnamese Invoice OCR (YOLO + CNN + Transformer Encoder)
+                </a>
+                <span class="date">Apr 2025 – May 2025</span>
+            </div>
+            <ul class="description">
+                <li>Developed an OCR system for Vietnamese invoices with YOLO for text-line detection and a custom CNN with Transformer Encoder for feature extraction.</li>
+                <li>Implemented two decoding approaches: Transformer Decoder for high-context accuracy and CTC Decoder for fast, robust recognition.</li>
+                <li>Built an interactive demo using Gradio for real-time OCR testing.</li>
+                <li><strong>Technologies:</strong> PyTorch, OpenCV, YOLO, CNN, Transformer Encoder, Transformer Decoder, CTC Decoder, Gradio.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">
+                <a href="https://github.com/vinhisreal/vqa-animal-cnn-lstm" target="_blank">
+                    VQA Animal (CNN + LSTM + Luong Attention)
+                </a>
+                <span class="date">Mar 2025 – Apr 2025</span>
+            </div>
+            <ul class="description">
+            <li>Developed a Visual Question Answering system for animal images (dogs, cats, snakes) using CNN for visual feature extraction and LSTM with attention for question encoding.</li>
+            <li>Created a custom dataset by generating question–answer pairs using the ChatGPT API.</li>
+            <li>Implemented and compared multiple backbones including DenseNet, ResNet18, and ResNet50 for performance evaluation.</li>
+            <li><strong>Technologies:</strong> PyTorch, OpenCV, CNN, LSTM, Luong Attention, DenseNet, ResNet18, ResNet50, ChatGPT API.</li>
+            </ul>
+        </div>
+
+        
+        
+
+        
+
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        
+        <div class="skills-grid">
+            <div class="skill-category">Programming:</div>
+            <div class="skill-list">Python</div>
+            
+            <div class="skill-category">Frameworks & Libraries:</div>
+            <div class="skill-list">Scikit-learn, PyTorch, TensorFlow, Hugging Face</div>
+
+            <div class="skill-category">Data Processing:</div>
+            <div class="skill-list">Pandas, NumPy, ChromaDB, Text Processing</div>
+
+            
+            <div class="skill-category">Machine Learning & Deep Learning:</div>
+            <div class="skill-list">Regression, Classification, CNN, Transformer</div>
+            
+            <div class="skill-category">Tools & Platforms:</div>
+            <div class="skill-list">Kaggle, Google Colab, Git, Docker, VS Code, n8n (Basic), PySpark (Basic)</div>
+
+            <div class="skill-category">Soft Skills:</div>
+            <div class="skill-list">Problem-solving, Reading technical documents in English, Team collaboration</div>
+        </div>
+    </div>
+
+</body>
+</html>
